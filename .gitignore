@@ -1,4 +1,3 @@
-www.tar.gz
 .DS_Store
 tests/pyUnittest/out/*
 .python/statsLayer.py
@@ -7,7 +6,6 @@ analyze
 *.save
 *.pyc
 *.tar
-*.tgz
 _build
 settings.json
 db/*
@@ -17,8 +15,6 @@ log/*
 node_modules/*
 !node_modules/README.txt
 deploy
-packages/*
-!packages/README.txt
 pid/*
 !pid/README.txt
 
