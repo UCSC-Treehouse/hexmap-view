@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# This is for a production bundle, rather than development.
+export DEV=false
+
+# The (interface):port on which the server runs.
+export PORT=8000
+
+# The URL exposed to the user.
+export URL_BASE=https://tumormap.ucsc.edu
+
+# Install tar location.
+export INSTALL_TAR_PATH=$HEXMAP/packages
+# If you need to go through an intermediary host:
+# export INSTALL_TAR_PATH=swat@plaza.gi.ucsc.edu:ops
+
+# Meteor settings.json variables.
+export ADMIN_EMAIL=hexmap@ucsc.edu
+# The URL for the hexmap-data server.
+export HUB_URL=https://hexcalc.ucsc.edu
+
+# The view data location in the context of the hexmap-data server.
+# Below path/requires/the/trailing/slash/.
+export VIEW_DIR=/data/data/view/
+
+# Mongo db.
+DB_NAME=admin
+DB_PORT=27017
+export MONGO_BIN=$HEXMAP/packages/mongodb/bin
+export MONGO_URL=mongodb://localhost:$DB_PORT/$DB_NAME
+
+export NODE_BIN=$HEXMAP/packages/node/bin
+export ROOT_URL=$URL_BASE
